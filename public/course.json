@@ -32,7 +32,7 @@
       "price": 35000,
       "details": "A data structure is a specialized format for organizing, processing, retrieving and storing data.",
       "image": "https://i.ibb.co/7p4KSrq/Rectangle-3.png",
-      "credit": 5
+      "credit": 3
     },
 
     {
@@ -48,7 +48,7 @@
       "id": 6,
       "course_name": "Software Engineering",
       "price": 23000,
-      "details": "It deals with the featured design, development, testing, and maintenance of software applications.",
+      "details": "It deals with the design, development, testing, and maintenance of software applications.",
       "image": "https://i.ibb.co/JsQtfqQ/Rectangle-2-5.png",
       "credit": 2
     },
@@ -59,7 +59,7 @@
       "price": 35000,
       "details": "World's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers.",
       "image": "https://i.ibb.co/zGmPZtk/Rectangle-3-1.png",
-      "credit": 5
+      "credit": 4
     },
 
     {
