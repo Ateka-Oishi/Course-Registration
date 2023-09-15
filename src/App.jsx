@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css'
 import Cart from './components/Cart/Cart'
 import Course from './components/Course/Course'

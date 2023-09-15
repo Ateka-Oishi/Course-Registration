@@ -1,0 +1,14 @@
+.remaining{
+    color: #2F80ED;
+    font-size: 16px;
+}
+
+.course-name{
+    color: #1C1B1B;
+    font-size: 18px;
+}
+
+.total-credit{
+    color: rgba(28, 27, 27, 0.80);
+    font-size: 14px;
+}

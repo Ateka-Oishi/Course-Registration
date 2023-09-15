@@ -9,14 +9,45 @@ import {BsBook} from "react-icons/bs";
 
 
 const Course = () => {
+    const [allCourses, setAllCourses] = useState([]);
+    const [selectedCourses, setSelectedCourses] = useState([]);
+    const [remaining, setRemaining] = useState(0);
+    const [totalCredit, setTotalCredit] = useState(0);
 
-    const [allCourses, setAllCourses] = useState([])
    useEffect((() =>{
     fetch("./course.json")
     .then(res=>res.json())
     .then(data =>setAllCourses(data));
    }), []);
-//    console.log(allCourses);
+   //console.log(allCourses);
+   
+   const handleSelectCourse = (course) =>{
+   //console.log(course);
+   const isAvailable = selectedCourses.find(subject =>subject.id == course.id)
+   let courseCredit = course.credit;
+
+   if(isAvailable) {
+   return alert('already selected');
+   }
+   else{
+    selectedCourses.forEach((subject) => {
+        courseCredit = courseCredit + subject.credit;
+    });
+    
+    const totalCreditRemaining = 20 - courseCredit;
+    if (courseCredit > 20) {
+        return alert('you can not take more');
+    }
+    else {
+    setTotalCredit(courseCredit);
+    setRemaining(totalCreditRemaining);
+    setSelectedCourses([...selectedCourses, course]);
+    }
+   }
+
+   };
+
+
 
     return (
         
@@ -30,14 +61,13 @@ const Course = () => {
                 <div className="card-img">
                     <img className='photo' src={course.image} alt="" />
                 </div>
-                <h3 className='course_name'>{course.course_name}</h3>
+                <h3 className='course-title'>{course.course_name}</h3>
                 <p className='description'>{course.details}</p>
                 <div className='info'>
-                <p><span className='dollar'><FiDollarSign /></span> Price : {course.price}</p>
-                <p><span className='book'><BsBook /></span> Credit : {course.credit}hr</p>
+                <p><span className='dollar'><FiDollarSign /></span>  Price : {course.price}</p>
+                <p><span className='book'><BsBook /></span>  Credit : {course.credit}hr</p>
                 </div>
-
-                <button className='card-btn'>Select</button>
+                <button onClick={ () => handleSelectCourse(course)} className='card-btn'>Select</button>
                 </div>
 
            
@@ -45,7 +75,7 @@ const Course = () => {
          }
             </div>
             <div className="course-cart">
-                <h1>this is cart</h1>
+                <Cart selectedCourses={selectedCourses} remaining={remaining} totalCredit={totalCredit}></Cart>
             </div>
            </div>
             
