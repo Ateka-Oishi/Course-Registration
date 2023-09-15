@@ -1,14 +1,38 @@
 .remaining{
+    font-style: normal;
     color: #2F80ED;
     font-size: 16px;
+    text-align: center;
+    
 }
 
 .course-name{
     color: #1C1B1B;
     font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    
+}
+li{ 
+    height: 30px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 6px 50px 0px wheat;
+    color: rgba(28, 27, 27, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    list-style: none;
+    text-align: justify;
 }
 
 .total-credit{
-    color: rgba(28, 27, 27, 0.80);
+    color: #2F80ED;
     font-size: 14px;
+    text-align: center;
+   
 }
+hr{
+    /* width: 264px; */
+    /* height: 1px; */
+    background: rgba(28, 27, 27, 0.20);
+}
+

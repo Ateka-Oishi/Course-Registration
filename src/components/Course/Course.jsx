@@ -5,6 +5,8 @@ import './Course.css';
 import Cart from '../Cart/Cart';
 import { FiDollarSign } from "react-icons/fi";
 import {BsBook} from "react-icons/bs";
+import Swal from 'sweetalert2';
+
 
 
 
@@ -27,7 +29,13 @@ const Course = () => {
    let courseCredit = course.credit;
 
    if(isAvailable) {
-   return alert('already selected');
+   //return alert('already selected');
+   Swal.fire({
+    icon: 'error',
+    text: 'Oops! Course is already selected.'
+});
+
+
    }
    else{
     selectedCourses.forEach((subject) => {
@@ -36,7 +44,13 @@ const Course = () => {
     
     const totalCreditRemaining = 20 - courseCredit;
     if (courseCredit > 20) {
-        return alert('you can not take more');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'You cannot select more than 20 credits.',
+            
+          });
+        
     }
     else {
     setTotalCredit(courseCredit);
