@@ -12,7 +12,7 @@
       "id": 2,
       "course_name": "Introduction to Algorithms",
       "price": 25000,
-      "details": "An algorithm is a procedure for solving a mathematical problem in a finite number of steps that frequently involves recursive operations.",
+      "details": "It explores the bedrock principles of computer science, including sorting, searching, and intricate graph algorithms.",
       "image": "https://i.ibb.co/f2qw091/Rectangle-2-3.png",
       "credit": 2
     },
@@ -21,7 +21,7 @@
       "id": 3,
       "course_name": "Introduction to C++ for DSA",
       "price": 10000,
-      "details": "C++ is and will be one of the most demanding programming languages, which is used by over 4 million programmers worldwide.",
+      "details": "C++ is one of the most demanding programming languages, which is used by over 4 million programmers worldwide.",
       "image": "https://i.ibb.co/jZgQQx7/Rectangle-2-4.png",
       "credit": 10
     },
@@ -39,7 +39,7 @@
       "id": 5,
       "course_name": "Introduction to OOP Python",
       "price": 19000,
-      "details": "Object-oriented programming (OOP) is a method of structuring a program by bundling related properties and behaviors into individual objects.",
+      "details": "OOP is a method of structuring a program by bundling related properties and behaviors into individual objects.",
       "image": "https://i.ibb.co/rsxt8Kj/Rectangle-2.png",
       "credit": 5
     },
@@ -48,7 +48,7 @@
       "id": 6,
       "course_name": "Software Engineering",
       "price": 23000,
-      "details": "The branch of computer science that deals with the design, development, testing, and maintenance of software applications.",
+      "details": "It deals with the design, development, testing, and maintenance of software applications.",
       "image": "https://i.ibb.co/JsQtfqQ/Rectangle-2-5.png",
       "credit": 2
     },
@@ -57,7 +57,7 @@
       "id": 7,
       "course_name": "AWS, Cloud Computing",
       "price": 35000,
-      "details": " Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
+      "details": "World's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers.",
       "image": "https://i.ibb.co/zGmPZtk/Rectangle-3-1.png",
       "credit": 5
     },
@@ -66,7 +66,7 @@
       "id": 8,
       "course_name": "Database (MySQL)",
       "price": 19000,
-      "details": "The logical data model, with objects such as data tables, views, rows, and columns, offers a flexible programming environment.",
+      "details": "Logical data model, with objects such as data tables, views, rows, and columns, offers a flexible environment.",
       "image": "https://i.ibb.co/JtfcxD5/Rectangle-2-1.png",
       "credit": 5
     },
@@ -75,7 +75,7 @@
       "id": 9,
       "course_name": "Problem-Solving Part",
       "price": 23000,
-      "details": "The process of identifying a problem, developing an algorithm for the identified problem and finally implementing the algorithm to develop a computer program. ",
+      "details": "Identifying a problem, developing an algorithm and finally executing the algorithm to develop a program.",
       "image": "https://i.ibb.co/qDsz6Cc/Rectangle-2-6.png",
       "credit": 2
     }
