@@ -7,8 +7,8 @@
 }
 
 .course-name{
-    color: #2F80ED;
-    /* color: #1C1B1B; */
+    /* color: #2F80ED; */
+    color: #1C1B1B;
     font-size: 18px;
     font-style: normal;
     text-align: center;
@@ -26,7 +26,8 @@ li{
 }
 
 .total-credit, .total-price{
-    color: #2F80ED;
+    /* color: #2F80ED; */
+    color: rgba(28, 27, 27, 0.80);
     font-size: 14px;
     text-align: center;
    
@@ -37,4 +38,6 @@ hr{
     /* height: 1px; */
     background: rgba(28, 27, 27, 0.20);
 }
+
+
 

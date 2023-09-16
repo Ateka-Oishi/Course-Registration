@@ -5,7 +5,9 @@ import './Course.css';
 import Cart from '../Cart/Cart';
 import { FiDollarSign } from "react-icons/fi";
 import {BsBook} from "react-icons/bs";
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -32,10 +34,7 @@ const Course = () => {
 
    if(isAvailable) {
    //return alert('already selected');
-   Swal.fire({
-    icon: 'error',
-    text: 'Oops! Course is already selected.'
-});
+   toast.error('Oops! already selected.');
 
 
    }
@@ -47,12 +46,9 @@ const Course = () => {
     
     const totalCreditRemaining = 20 - courseCredit;
     if (courseCredit > 20) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'You cannot select more than 20 credits.',
-            
-          });
+        toast.error(
+             'You cannot select more than 20 credits and less than 0 credits.',
+            );
         
     }
     else {    
@@ -87,6 +83,11 @@ const Course = () => {
                 <p><span className='book'><BsBook /></span>  Credit : {course.credit}hr</p>
                 </div>
                 <button onClick={ () => handleSelectCourse(course)} className='card-btn'>Select</button>
+                <ToastContainer
+                 position={'top-right'}
+                 autoClose={2000}
+                 toastStyle={{color: "rgba(255, 99, 71, 1)"}}
+                  />
                 </div>
 
            

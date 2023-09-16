@@ -13,7 +13,9 @@ const Cart = ({selectedCourses, remaining, totalCredit, totalPrice}) => {
             <h5 className='remaining'>Credit Hour Remaining {remaining} hr</h5>
             <hr />
              
+            {/* <h4 className='course-name'>Course Name</h4> */}
             <h4 className='course-name'>Course Name : {selectedCourses.length}</h4>
+            
             
             {
             selectedCourses.map((course,idx) => (
@@ -24,7 +26,7 @@ const Cart = ({selectedCourses, remaining, totalCredit, totalPrice}) => {
             ))
             }
             <hr />
-            <h5 className='total-credit'>Total Credit Hour: {totalCredit}</h5>
+            <h5 className='total-credit'>Total Credit Hour : {totalCredit}</h5>
             <hr />
             <h5 className='total-price'>Total Price : {totalPrice} USD</h5>
 
