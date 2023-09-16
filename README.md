@@ -33,7 +33,7 @@ npm i react-toastify
 
 * **selectedCourses** state variable is initialized as an empty ARRAY.When an user click on the select button it will trigger a function called **handleSelectCourse**. Then it will pass the selected course as a Parameter. It is used to set the course the user has selected in the ARRAY. **setSelectedCourses* will set the courses the user have selected.
 
-*  **totalCredit** and **totalPrice** are another state variables initialized with 0. The state variable is used to show the totalCredit and totalPrice of the courses the user have selected. When a user selects a course it will sum all of the course price and set the values using **setTotalPrice** and **setTotalCredit**. Also **totalCredit** and **totalPrice** will be passed as a props in the components **Cart** and will preview the value of the totalCredit and totalPrice in the **Cart**
+* **totalCredit** and **totalPrice** are another state variables initialized with 0. The state variable is used to show the totalCredit and totalPrice of the courses the user have selected. When a user selects a course it will sum all of the course price and set the values using **setTotalPrice** and **setTotalCredit**. Also **totalCredit** and **totalPrice** will be passed as a props in the components **Cart** and will preview the value of the totalCredit and totalPrice in the **Cart**
 
 * **remaining** is a state variable initialized with 20 by default. Because credit cannot be more than 20. When a user click on the Select button then the it will be called by **setRemaining** function through the **totalCreditRemaining** variable.
 
@@ -44,12 +44,12 @@ npm i react-toastify
 ```bash
 npm run dev
 ```
-Open [http://localhost:5173/](http://localhost:5173/) with your browser to start your local instance of `Course Registration`.
+* Open [http://localhost:5173/](http://localhost:5173/) with your browser to start your local instance of `Course Registration`.
 
 
 # Deploy on Netlify
 
-The easiest way to deploy your React.js website is to use the [Netlify Platform]( https://app.netlify.com/) from the netlify website.
+* The easiest way to deploy your React.js website is to use the [Netlify Platform]( https://app.netlify.com/) from the netlify website.
 
 
 # Contributors
